@@ -20,8 +20,12 @@ public class PlayerController : MonoBehaviour {
     playerMovementAnim.SetFloat("moveX", playerRigidbody.velocity.x);
     playerMovementAnim.SetFloat("moveY", playerRigidbody.velocity.y);
 
-
     playerMovementAnim.speed = animationSpeed;
+
+    if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1) {
+      playerMovementAnim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
+      playerMovementAnim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
+    }
   }
 
   void FixedUpdate() {
