@@ -29,6 +29,6 @@ public class PlayerController : MonoBehaviour {
   }
 
   void FixedUpdate() {
-    playerRigidbody.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * movementSpeed * Time.deltaTime;
+    playerRigidbody.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * movementSpeed * Time.deltaTime;
   }
 }
