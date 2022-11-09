@@ -9,11 +9,11 @@ public class EnemyController : MonoBehaviour
   public Transform homePosition;
 
   [SerializeField]
-  private float speed;
+  private float speed = 0f;
   [SerializeField]
-  private float maxRange;
+  private float maxRange = 0f;
   [SerializeField]
-  private float minRange;
+  private float minRange = 0f;
 
   void Start()
   {

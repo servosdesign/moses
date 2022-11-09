@@ -8,9 +8,9 @@ public class PlayerController : MonoBehaviour
   private Animator playerMovementAnim;
 
   [SerializeField]
-  private float movementSpeed;
+  private float movementSpeed = 0f;
   [SerializeField]
-  private float animationSpeed;
+  private float animationSpeed = 0f;
 
   void Start()
   {
