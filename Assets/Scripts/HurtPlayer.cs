@@ -5,16 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class HurtPlayer : MonoBehaviour
 {
-  private float waitToLoad = 2f;
-  private bool reloading;
+  private HealthManager healthManage;
+
+  public float waitToHurt = 0.7f;
+  public bool isTouching;
+  [SerializeField]
+  private int damageToGive = 10;
 
   void Start()
   {
-
+    healthManage = FindObjectOfType<HealthManager>();
   }
 
   void Update()
   {
+    /*
     if (reloading)
     {
       waitToLoad -= Time.deltaTime;
@@ -23,14 +28,44 @@ public class HurtPlayer : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
       }
     }
+    */
+
+    if (isTouching)
+    {
+      waitToHurt -= Time.deltaTime;
+      if (waitToHurt <= 0)
+      {
+        healthManage.HurtPlayer(damageToGive);
+        waitToHurt = 0.7f;
+
+      }
+    }
   }
 
   private void OnCollisionEnter2D(Collision2D other)
   {
     if (other.collider.tag == "Player")
     {
-      other.gameObject.SetActive(false);
-      reloading = true; 
+      other.gameObject.GetComponent<HealthManager>().HurtPlayer(damageToGive);
+
+      // reloading = true;
+    }
+  }
+
+  void OnCollisionStay2D(Collision2D other)
+  {
+    if (other.collider.tag == "Player")
+    {
+      isTouching = true;
+    }
+  }
+
+  void OnCollisionExit2D(Collision2D other)
+  {
+    if (other.collider.tag == "Player")
+    {
+      isTouching = false;
+      waitToHurt = 2;
     }
   }
 }
