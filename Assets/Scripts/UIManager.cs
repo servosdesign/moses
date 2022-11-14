@@ -6,19 +6,19 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
-  private HealthManager healthManager;
-  public Slider healthBar;
-  public TextMeshProUGUI hpText;
+    private HealthManager healthManager;
+    public Slider healthBar;
+    public TextMeshProUGUI hpText;
 
-  void Start()
-  {
-    healthManager = FindObjectOfType<HealthManager>();
-  }
+    void Start()
+    {
+        healthManager = FindObjectOfType<HealthManager>();
+    }
 
-  void Update()
-  {
-    healthBar.maxValue = healthManager.maxHealth;
-    healthBar.value = healthManager.currentHealth;
-    hpText.text = "HP: " + healthManager.currentHealth + "/" + healthManager.maxHealth;
-  }
+    void Update()
+    {
+        healthBar.maxValue = healthManager.maxHealth;
+        healthBar.value = healthManager.currentHealth;
+        hpText.text = "HP: " + healthManager.currentHealth + "/" + healthManager.maxHealth;
+    }
 }
