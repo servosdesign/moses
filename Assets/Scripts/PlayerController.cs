@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     private float movementSpeed = 0f;
     [SerializeField]
     private float animationSpeed = 0f;
-    private float attackTime = 0.25f;
+    private float attackTime = 0.1f;
     private float attackCounter = 0.25f;
     private bool isAttacking;
 
@@ -37,9 +37,14 @@ public class PlayerController : MonoBehaviour
         if (isAttacking)
         {
             attackCounter -= Time.deltaTime;
+            if (attackCounter <= 0)
+            {
+                playerMovementAnim.SetBool("isAttacking", false);
+                isAttacking = false;
+            }
         }
 
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             attackCounter = attackTime;
             playerMovementAnim.SetBool("isAttacking", true);
@@ -50,5 +55,10 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         playerRigidbody.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * movementSpeed * Time.deltaTime;
+
+        if (isAttacking)
+        {
+            playerRigidbody.velocity = Vector2.zero;
+        }
     }
 }
