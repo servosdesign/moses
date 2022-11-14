@@ -1,1 +1,1 @@
-#### moses
+#### Unity rpg game project with top down 2D, pixelized, minimalistic, choices matter, features with AI generated artwork implementations. The player is guided through the game’s various scenes and is left with their own options in the varying situations.
