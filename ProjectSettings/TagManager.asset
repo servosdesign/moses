@@ -7,6 +7,7 @@ TagManager:
   - main
   - Enemy
   - Sword
+  - interObject
   layers:
   - Default
   - TransparentFX
