@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,12 +8,12 @@ namespace DialogueSystem
     {
         private Text textHolder;
 
-        [Header("Text Options")]
+        [Header ("Text Options")]
         [SerializeField] private string input;
         [SerializeField] private Color textColor;
         [SerializeField] private Font textFont;
 
-        [Header("Time paramaters")]
+        [Header("Time parameters")]
         [SerializeField] private float delay;
         [SerializeField] private float delayBetweenLines;
 
@@ -25,8 +24,6 @@ namespace DialogueSystem
         {
             textHolder = GetComponent<Text>();
             textHolder.text = "";
-
-            StartCoroutine(WriteText(input, textHolder, textColor, textFont, delay, sound, delayBetweenLines));
         }
 
         private void Start()
@@ -35,4 +32,3 @@ namespace DialogueSystem
         }
     }
 }
-

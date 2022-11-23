@@ -1,13 +1,12 @@
-
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
-
 
 namespace DialogueSystem
 {
     public class DialogueHolder : MonoBehaviour
     {
-        private void Awake() {
+        private void Awake()
+        {
             StartCoroutine(dialogueSequence());
         }
 
@@ -31,3 +30,4 @@ namespace DialogueSystem
         }
     }
 }
+
