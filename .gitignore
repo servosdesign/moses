@@ -21,7 +21,8 @@
 
 # TextMesh Pro files
 [Aa]ssets/TextMesh*Pro/
-
+# Large Music files
+[Aa]ssets/Audio/Music/
 # Visual Studio cache directory
 .vs/
 
