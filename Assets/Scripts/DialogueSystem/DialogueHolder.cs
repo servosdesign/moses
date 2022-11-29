@@ -5,9 +5,22 @@ namespace DialogueSystem
 {
     public class DialogueHolder : MonoBehaviour
     {
+        private IEnumerator dialogueSeq;
+
         private void Awake()
         {
-            StartCoroutine(dialogueSequence());
+            dialogueSeq = dialogueSequence();
+            StartCoroutine(dialogueSeq);
+        }
+
+        private void Update()
+        {
+            if (Input.GetMouseButtonDown(1))
+            {
+                Deactivate();
+                gameObject.SetActive(false);
+                StopCoroutine(dialogueSeq);
+            }
         }
 
         private IEnumerator dialogueSequence()

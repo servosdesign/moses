@@ -584,7 +584,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &126545436
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2045,8 +2045,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 68.83191, y: -3.353119}
-  m_SizeDelta: {x: 674.5756, y: 91.5545}
+  m_AnchoredPosition: {x: 89.24365, y: -3.353119}
+  m_SizeDelta: {x: 638.687, y: 91.5545}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &178266358
 MonoBehaviour:
@@ -2063,7 +2063,7 @@ MonoBehaviour:
   input: You know Towser, the opponent of our traditions?
   textColor: {r: 1, g: 1, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: 48d7c472454a850458a8fe987fdef06d, type: 3}
-  delay: 0.05
+  delay: 0.07
   delayBetweenLines: 2
   sound: {fileID: 8300000, guid: 0671e938c64adc14cb96717d1ed52f76, type: 3}
 --- !u!114 &178266359
@@ -16595,8 +16595,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 68.83191, y: -3.353119}
-  m_SizeDelta: {x: 674.5756, y: 91.5545}
+  m_AnchoredPosition: {x: 89.24365, y: -3.353119}
+  m_SizeDelta: {x: 638.687, y: 91.5545}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &545601244
 MonoBehaviour:
@@ -16613,7 +16613,7 @@ MonoBehaviour:
   input: Go into his room tonight and kill him.
   textColor: {r: 1, g: 1, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: 48d7c472454a850458a8fe987fdef06d, type: 3}
-  delay: 0.05
+  delay: 0.07
   delayBetweenLines: 2
   sound: {fileID: 8300000, guid: 0671e938c64adc14cb96717d1ed52f76, type: 3}
 --- !u!114 &545601245
@@ -16695,8 +16695,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 68.83191, y: -3.353119}
-  m_SizeDelta: {x: 674.5756, y: 91.5545}
+  m_AnchoredPosition: {x: 89.24365, y: -3.353119}
+  m_SizeDelta: {x: 638.687, y: 91.5545}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &631816216
 MonoBehaviour:
@@ -16713,7 +16713,7 @@ MonoBehaviour:
   input: In order for us to thrive through the future, he must be taken care of...
   textColor: {r: 1, g: 1, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: 48d7c472454a850458a8fe987fdef06d, type: 3}
-  delay: 0.05
+  delay: 0.07
   delayBetweenLines: 2
   sound: {fileID: 8300000, guid: 0671e938c64adc14cb96717d1ed52f76, type: 3}
 --- !u!114 &631816217
@@ -16758,6 +16758,134 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631816214}
   m_CullTransparentMesh: 1
+--- !u!1 &801195631
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 801195633}
+  - component: {fileID: 801195632}
+  m_Layer: 0
+  m_Name: SceneMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &801195632
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801195631}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e4363d04b3cc37f4893c8f1e1f9e8812, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &801195633
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801195631}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.8763328, y: -0.007915534, z: 4.619146}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &837630954
 GameObject:
   m_ObjectHideFlags: 0
@@ -17002,6 +17130,7 @@ GameObject:
   - component: {fileID: 913170416}
   - component: {fileID: 913170415}
   - component: {fileID: 913170414}
+  - component: {fileID: 913170420}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -17147,6 +17276,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &913170420
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913170413}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.005654037, y: -0.07380545}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.014934, y: 1.2619455}
+  m_EdgeRadius: 0
 --- !u!1 &960490742
 GameObject:
   m_ObjectHideFlags: 0
@@ -17184,8 +17339,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 68.83191, y: -3.353119}
-  m_SizeDelta: {x: 674.5756, y: 91.5545}
+  m_AnchoredPosition: {x: 89.24365, y: -3.353119}
+  m_SizeDelta: {x: 638.687, y: 91.5545}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &960490744
 MonoBehaviour:
@@ -17202,7 +17357,7 @@ MonoBehaviour:
   input: The future depends on this
   textColor: {r: 1, g: 1, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: 48d7c472454a850458a8fe987fdef06d, type: 3}
-  delay: 0.05
+  delay: 0.07
   delayBetweenLines: 2
   sound: {fileID: 8300000, guid: 0671e938c64adc14cb96717d1ed52f76, type: 3}
 --- !u!114 &960490745
@@ -19954,8 +20109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 68.83191, y: -3.353119}
-  m_SizeDelta: {x: 674.5756, y: 91.5545}
+  m_AnchoredPosition: {x: 89.24365, y: -3.353119}
+  m_SizeDelta: {x: 638.687, y: 91.5545}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1075905212
 MonoBehaviour:
@@ -19972,7 +20127,7 @@ MonoBehaviour:
   input: I trust you'll make the right decision.
   textColor: {r: 1, g: 1, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: 48d7c472454a850458a8fe987fdef06d, type: 3}
-  delay: 0.05
+  delay: 0.07
   delayBetweenLines: 2
   sound: {fileID: 8300000, guid: 0671e938c64adc14cb96717d1ed52f76, type: 3}
 --- !u!114 &1075905213
@@ -20110,7 +20265,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 126545436}
-  - {fileID: 1175359010}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20119,37 +20273,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1175359009
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1175359010}
-  m_Layer: 0
-  m_Name: NPC1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1175359010
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1175359009}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 107.50366, y: -397.72556, z: 0.24307847}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1090129558}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1182665113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20494,9 +20617,10 @@ GameObject:
   - component: {fileID: 1465625031}
   - component: {fileID: 1465625034}
   - component: {fileID: 1465625035}
+  - component: {fileID: 1465625036}
   m_Layer: 0
   m_Name: NPC1
-  m_TagString: interObject
+  m_TagString: NPC1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20601,10 +20725,36 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.004810529, y: -0.004057449}
   serializedVersion: 2
-  m_Radius: 0.16
---- !u!114 &1465625035
+  m_Radius: 0.13894899
+--- !u!61 &1465625035
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465625030}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.006284684, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.30743062, y: 0.32}
+  m_EdgeRadius: 0
+--- !u!114 &1465625036
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20613,11 +20763,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1465625030}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3155d1e2760ad19418ff455f7e885c1d, type: 3}
+  m_Script: {fileID: 11500000, guid: d1b7ff17b3fcbec4193b2fad95a86c97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcMessage: 1
-  message: test
+  dialogue: {fileID: 126545435}
 --- !u!1 &1664534746
 GameObject:
   m_ObjectHideFlags: 0
@@ -21027,8 +21176,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 68.83191, y: -3.353119}
-  m_SizeDelta: {x: 674.5756, y: 91.5545}
+  m_AnchoredPosition: {x: 89.24365, y: -3.353119}
+  m_SizeDelta: {x: 638.687, y: 91.5545}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1797907002
 MonoBehaviour:
@@ -21045,7 +21194,7 @@ MonoBehaviour:
   input: The completion of this task is important for our religious progression
   textColor: {r: 1, g: 1, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: 48d7c472454a850458a8fe987fdef06d, type: 3}
-  delay: 0.05
+  delay: 0.07
   delayBetweenLines: 2
   sound: {fileID: 8300000, guid: 0671e938c64adc14cb96717d1ed52f76, type: 3}
 --- !u!114 &1797907003
@@ -21341,8 +21490,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 68.83191, y: -3.353119}
-  m_SizeDelta: {x: 674.5756, y: 91.5545}
+  m_AnchoredPosition: {x: 89.24365, y: -3.353119}
+  m_SizeDelta: {x: 638.687, y: 91.5545}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2067669026
 MonoBehaviour:
@@ -21359,7 +21508,7 @@ MonoBehaviour:
   input: Hello student, I have a task you must carry out
   textColor: {r: 1, g: 1, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: 48d7c472454a850458a8fe987fdef06d, type: 3}
-  delay: 0.05
+  delay: 0.07
   delayBetweenLines: 2
   sound: {fileID: 8300000, guid: 0671e938c64adc14cb96717d1ed52f76, type: 3}
 --- !u!114 &2067669027

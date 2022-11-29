@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Sword
   - interObject
+  - NPC1
   layers:
   - Default
   - TransparentFX
