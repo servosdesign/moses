@@ -19,7 +19,7 @@ namespace DialogueSystem
                 SoundManager.instance.PlaySound(sound);
                 yield return new WaitForSeconds(delay);
             }
-
+            
             //yield return new WaitForSeconds(delayBetweenLines);
             yield return new WaitUntil(() => Input.GetMouseButton(0));
             finished = true;

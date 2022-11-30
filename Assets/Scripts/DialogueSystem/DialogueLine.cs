@@ -22,14 +22,9 @@ namespace DialogueSystem
 
         private IEnumerator lineAppear;
 
-        private void Awake()
+        private void OnEnable()
         {
-            textHolder = GetComponent<Text>();
-            textHolder.text = "";
-        }
-
-        private void Start()
-        {
+            ResetLine();
             lineAppear = WriteText(input, textHolder, textColor, textFont, delay, sound, delayBetweenLines);
             StartCoroutine(lineAppear);
         }
@@ -48,6 +43,13 @@ namespace DialogueSystem
                     finished = true;
                 }
             }
+        }
+
+        private void ResetLine()
+        {
+            textHolder = GetComponent<Text>();
+            textHolder.text = "";
+            finished = false;
         }
     }
 }
