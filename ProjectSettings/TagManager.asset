@@ -9,6 +9,8 @@ TagManager:
   - Sword
   - interObject
   - NPC1
+  - NPC
+  - NPC2
   layers:
   - Default
   - TransparentFX

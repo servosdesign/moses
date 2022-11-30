@@ -43,7 +43,6 @@ namespace DialogueSystem
                 yield return new WaitUntil(() => transform.GetChild(index).GetComponent<DialogueLine>().finished);
             }
             dialogueFinsihed = true;
-
             gameObject.SetActive(false);
         }
 

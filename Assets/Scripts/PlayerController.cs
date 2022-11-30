@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D playerRigidbody;
     private Animator playerMovementAnim;
     private NPCController npc;
+    private CutsceneController cutscene;
 
     [SerializeField]
     private float movementSpeed = 0f;
@@ -15,6 +17,7 @@ public class PlayerController : MonoBehaviour
     private float attackTime = 0.1f;
     private float attackCounter = 0.25f;
     private bool isAttacking;
+
 
     void Start()
     {
@@ -83,13 +86,29 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.tag == "NPC1")
+
+        if (other.gameObject.tag == "NPC" || other.gameObject.tag == "NPC2")
         {
             npc = other.gameObject.GetComponent<NPCController>();
+            cutscene = other.gameObject.GetComponent<CutsceneController>();
 
             if (Input.GetKey(KeyCode.E))
             {
                 npc.ActivateDialogue();
+            }
+
+            if (other.gameObject.tag == "NP2")
+            {
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    Debug.Log("killed");
+                    cutscene.KilledCutscene();
+                }
+                if (Input.GetKey(KeyCode.V))
+                {
+                    Debug.Log("spared");
+                    cutscene.SparedCutscene();
+                }
             }
         }
     }
