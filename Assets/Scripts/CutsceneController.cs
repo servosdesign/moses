@@ -6,10 +6,12 @@ public class CutsceneController : MonoBehaviour
 {
     [SerializeField] private GameObject killedCutscene;
     [SerializeField] private GameObject sparedCutscene;
+    [SerializeField] private GameObject backgroundImage;
 
     public void KilledCutscene()
     {
         killedCutscene.SetActive(true);
+        backgroundImage.SetActive(true);
     }
 
     public bool KilledCutsceneActive()
@@ -20,6 +22,7 @@ public class CutsceneController : MonoBehaviour
     public void SparedCutscene()
     {
         sparedCutscene.SetActive(true);
+        backgroundImage.SetActive(true);
     }
 
     public bool SparedCutsceneActive()

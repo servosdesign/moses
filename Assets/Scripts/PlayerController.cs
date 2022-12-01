@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    public GameObject cutsceneManager;
     private Rigidbody2D playerRigidbody;
     private Animator playerMovementAnim;
     private NPCController npc;
@@ -17,7 +18,6 @@ public class PlayerController : MonoBehaviour
     private float attackTime = 0.1f;
     private float attackCounter = 0.25f;
     private bool isAttacking;
-
 
     void Start()
     {
@@ -90,14 +90,14 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.tag == "NPC" || other.gameObject.tag == "NPC2")
         {
             npc = other.gameObject.GetComponent<NPCController>();
-            cutscene = other.gameObject.GetComponent<CutsceneController>();
+            cutscene = cutsceneManager.GetComponent<CutsceneController>();
 
             if (Input.GetKey(KeyCode.E))
             {
                 npc.ActivateDialogue();
             }
 
-            if (other.gameObject.tag == "NP2")
+            if (other.gameObject.tag == "NPC2")
             {
                 if (Input.GetKey(KeyCode.Space))
                 {
