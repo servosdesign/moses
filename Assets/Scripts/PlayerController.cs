@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     private float attackTime = 0.1f;
     private float attackCounter = 0.25f;
     private bool isAttacking;
+    private bool inNPCarea;
+    private bool killable;
 
     void Start()
     {
@@ -56,6 +58,22 @@ public class PlayerController : MonoBehaviour
                 playerMovementAnim.SetBool("isAttacking", true);
                 isAttacking = true;
             }
+
+            if (inNPCarea && Input.GetKeyDown("e"))
+            {
+                npc.ActivateDialogue();
+            }
+
+            if (inNPCarea && killable && Input.GetKeyDown("space"))
+            {
+                Debug.Log("killed");
+                cutscene.KilledCutscene();
+            }
+            if (inNPCarea && killable && Input.GetKeyDown("v"))
+            {
+                Debug.Log("spared");
+                cutscene.SparedCutscene();
+            }
         }
     }
 
@@ -84,31 +102,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
 
         if (other.gameObject.tag == "NPC" || other.gameObject.tag == "NPC2")
         {
+            inNPCarea = true;
             npc = other.gameObject.GetComponent<NPCController>();
             cutscene = cutsceneManager.GetComponent<CutsceneController>();
 
-            if (Input.GetKey(KeyCode.E))
-            {
-                npc.ActivateDialogue();
-            }
-
             if (other.gameObject.tag == "NPC2")
             {
-                if (Input.GetKey(KeyCode.Space))
-                {
-                    Debug.Log("killed");
-                    cutscene.KilledCutscene();
-                }
-                if (Input.GetKey(KeyCode.V))
-                {
-                    Debug.Log("spared");
-                    cutscene.SparedCutscene();
-                }
+                killable = true;
             }
         }
     }
@@ -116,5 +121,7 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         npc = null;
+        inNPCarea = false;
+        killable = false;
     }
 }
