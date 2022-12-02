@@ -485,4 +485,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: PlayAttackingSound
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: a7e70990fb46cdd40adb60c74b34c3ad, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

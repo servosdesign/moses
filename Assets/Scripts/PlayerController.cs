@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private Animator playerMovementAnim;
     private NPCController npc;
     private CutsceneController cutscene;
+    private AudioSource footstepAudio;
 
     [SerializeField]
     private float movementSpeed = 0f;

@@ -65,8 +65,11 @@ public class EnemyHealthManager : MonoBehaviour
         flashActive = true;
         flashCounter = flashLength;
 
+        //PlayEnemyHitSound
+
         if (currentHealth <= 0)
         {
+            //PlayEnemeyKilledSound
             Destroy(gameObject);
         }
     }
