@@ -7,6 +7,8 @@ namespace DialogueSystem
     {
         private IEnumerator dialogueSeq;
         private bool dialogueFinsihed;
+        
+        public bool cutscene;
 
         private void OnEnable()
         {
@@ -16,11 +18,14 @@ namespace DialogueSystem
 
         private void Update()
         {
-            if (Input.GetMouseButtonDown(1))
+            if (!cutscene)
             {
-                Deactivate();
-                gameObject.SetActive(false);
-                StopCoroutine(dialogueSeq);
+                if (Input.GetMouseButtonDown(1))
+                {
+                    Deactivate();
+                    gameObject.SetActive(false);
+                    StopCoroutine(dialogueSeq);
+                }
             }
         }
 
