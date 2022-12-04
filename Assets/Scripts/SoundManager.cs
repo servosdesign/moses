@@ -1,11 +1,55 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager instance { get; private set; }
 
+    private static readonly string FirstPlay = "FirstPlayer";
+    private static readonly string MusicVolumePref = "MusicVolumePref";
+    private int firstPlayInt;
+    public Slider musicVolumeSlider;
+    private float musicVolume;
+    public AudioSource musicVolumeAudio;
+
     private AudioSource source;
     public AudioSource animationSource;
+
+    public void Start()
+    {
+        firstPlayInt = PlayerPrefs.GetInt(FirstPlay);
+
+        if (firstPlayInt == 0)
+        {
+            musicVolume = 0.5f;
+            musicVolumeSlider.value = musicVolume;
+            PlayerPrefs.SetFloat(MusicVolumePref, musicVolume);
+            PlayerPrefs.SetInt(FirstPlay, -1);
+        }
+        else
+        {
+            musicVolume = PlayerPrefs.GetFloat(MusicVolumePref);
+            musicVolumeSlider.value = musicVolume;
+        }
+    }
+
+    public void SaveSoundSettings()
+    {
+        PlayerPrefs.SetFloat(MusicVolumePref, musicVolumeSlider.value);
+    }
+
+    void OnApplicationFocus(bool hasFocus)
+    {
+        if (!hasFocus)
+        {
+            SaveSoundSettings();
+        }
+    }
+
+    public void UpdateSound()
+    {
+        musicVolumeAudio.volume = musicVolumeSlider.value;
+    }
 
     private void Awake()
     {
@@ -27,10 +71,13 @@ public class SoundManager : MonoBehaviour
     {
         animationSource.PlayOneShot(attackingSound, 0.3f);
     }
-    
+
+    public void PlaySparedSound(AudioClip sparedSound)
+    {
+        animationSource.PlayOneShot(sparedSound, 0.1f);
+    }
+
     //PlayEnemyHitSound
 
     //PlayEnemeyKilledSound
-
-    //PlayedSparedSound
 }

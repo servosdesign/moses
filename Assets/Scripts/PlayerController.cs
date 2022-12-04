@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     private NPCController npc;
     private CutsceneController cutscene;
     private AudioSource footstepAudio;
+    private SoundManager soundManager;
+    public AudioClip sparedSound;
 
     [SerializeField]
     private float movementSpeed = 0f;
@@ -26,6 +28,7 @@ public class PlayerController : MonoBehaviour
     {
         playerRigidbody = GetComponent<Rigidbody2D>();
         playerMovementAnim = GetComponent<Animator>();
+        soundManager = GetComponent<SoundManager>();
     }
 
     void Update()
@@ -69,10 +72,11 @@ public class PlayerController : MonoBehaviour
             {
                 cutscene.KilledCutscene();
             }
+
             if (inNPCarea && killable && Input.GetKeyDown("v"))
             {
+                soundManager.PlaySparedSound(sparedSound);
                 cutscene.SparedCutscene();
-                //PlaySparedSound()
             }
         }
     }
