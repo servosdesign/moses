@@ -21492,7 +21492,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e4363d04b3cc37f4893c8f1e1f9e8812, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.07
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -28298,7 +28298,7 @@ GameObject:
   - component: {fileID: 1829551864}
   - component: {fileID: 1829551865}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: PauseManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

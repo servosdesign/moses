@@ -31,4 +31,6 @@ public class SoundManager : MonoBehaviour
     //PlayEnemyHitSound
 
     //PlayEnemeyKilledSound
+
+    //PlayedSparedSound
 }

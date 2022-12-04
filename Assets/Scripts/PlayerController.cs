@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (!InDialogue())
+        if (!InDialogue() && !InKilled() && !InSpared())
         {
             playerMovementAnim.SetFloat("moveX", playerRigidbody.velocity.x);
             playerMovementAnim.SetFloat("moveY", playerRigidbody.velocity.y);
@@ -67,20 +67,19 @@ public class PlayerController : MonoBehaviour
 
             if (inNPCarea && killable && Input.GetKeyDown("space"))
             {
-                Debug.Log("killed");
                 cutscene.KilledCutscene();
             }
             if (inNPCarea && killable && Input.GetKeyDown("v"))
             {
-                Debug.Log("spared");
                 cutscene.SparedCutscene();
+                //PlaySparedSound()
             }
         }
     }
 
     void FixedUpdate()
     {
-        if (!InDialogue())
+        if (!InDialogue() && !InKilled() && !InSpared())
         {
             playerRigidbody.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * movementSpeed * Time.deltaTime;
 
@@ -96,6 +95,34 @@ public class PlayerController : MonoBehaviour
         if (npc != null)
         {
             return npc.DialogueActive();
+        }
+        if (cutscene != null)
+        {
+            return cutscene.KilledCutsceneActive();
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    private bool InKilled()
+    {
+        if (cutscene != null)
+        {
+            return cutscene.KilledCutsceneActive();
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    private bool InSpared()
+    {
+        if (cutscene != null)
+        {
+            return cutscene.SparedCutsceneActive();
         }
         else
         {
