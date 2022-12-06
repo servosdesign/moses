@@ -11,6 +11,10 @@ TagManager:
   - NPC1
   - NPC
   - NPC2
+  - MainMenu
+  - Scene1
+  - Scene2
+  - QuitGame
   layers:
   - Default
   - TransparentFX

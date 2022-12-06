@@ -6,12 +6,26 @@ namespace DialogueSystem
     public class DialogueHolder : MonoBehaviour
     {
         private IEnumerator dialogueSeq;
+        public Animator killedCutsceneAnimation;
+        public Animator sparedCutsceneAnimation;
+
         private bool dialogueFinsihed;
-        
         public bool cutscene;
 
         private void OnEnable()
         {
+            if (cutscene)
+            {
+                if (killedCutsceneAnimation)
+                {
+                    killedCutsceneAnimation.Play("cutscene-fadein");
+                }
+                if (sparedCutsceneAnimation)
+                {
+                    sparedCutsceneAnimation.Play("cutscene-fadein2");
+                }
+            }
+
             dialogueSeq = dialogueSequence();
             StartCoroutine(dialogueSeq);
         }
