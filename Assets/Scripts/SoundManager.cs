@@ -69,12 +69,18 @@ public class SoundManager : MonoBehaviour
 
     public void PlayAttackingSound(AudioClip attackingSound)
     {
-        animationSource.PlayOneShot(attackingSound, 0.3f);
+        if (!PauseManager.isPaused)
+        {
+            animationSource.PlayOneShot(attackingSound, 0.3f);
+        }
     }
 
     public void PlaySparedSound(AudioClip sparedSound)
     {
-        animationSource.PlayOneShot(sparedSound, 0.1f);
+        if (!PauseManager.isPaused)
+        {
+            animationSource.PlayOneShot(sparedSound, 0.1f);
+        }
     }
 
     //PlayEnemyHitSound

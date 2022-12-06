@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (!InDialogue() && !InKilled() && !InSpared())
+        if (!InDialogue() && !InKilled() && !InSpared() && !PauseManager.isPaused)
         {
             playerMovementAnim.SetFloat("moveX", playerRigidbody.velocity.x);
             playerMovementAnim.SetFloat("moveY", playerRigidbody.velocity.y);
@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!InDialogue() && !InKilled() && !InSpared())
+        if (!InDialogue() && !InKilled() && !InSpared() && !PauseManager.isPaused)
         {
             playerRigidbody.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * movementSpeed * Time.deltaTime;
 

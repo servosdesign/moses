@@ -14,7 +14,7 @@ namespace DialogueSystem
 
         private void OnEnable()
         {
-            if (cutscene)
+            if (cutscene && !PauseManager.isPaused)
             {
                 if (killedCutsceneAnimation)
                 {
@@ -32,7 +32,7 @@ namespace DialogueSystem
 
         private void Update()
         {
-            if (!cutscene)
+            if (!cutscene && !PauseManager.isPaused)
             {
                 if (Input.GetMouseButtonDown(1))
                 {
