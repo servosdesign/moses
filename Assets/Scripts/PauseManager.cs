@@ -1,38 +1,57 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PauseManager : MonoBehaviour
 {
     public GameObject pauseMenu;
-    bool paused = false;
+    public GameObject optionsMenu;
+    public Button resumeButton;
+    public Button optionsButton;
+    public Button quitButton;
+    public Button backButton;
+    public Color originalColor;
+
+    public static bool isPaused;
 
     void Start()
     {
-        pauseMenu.gameObject.SetActive(false);
+        pauseMenu.SetActive(false);
+        originalColor = resumeButton.GetComponent<Image>().color;
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (paused == true)
+            if (isPaused)
             {
-                Time.timeScale = 1.0f;
-                pauseMenu.gameObject.SetActive(false);
-                paused = false;
-                
+                ResumeGame();
+                resumeButton.GetComponent<Image>().color = originalColor;
+                optionsButton.GetComponent<Image>().color = originalColor;
+                quitButton.GetComponent<Image>().color = originalColor;
+                backButton.GetComponent<Image>().color = originalColor;
             }
             else
             {
-                Time.timeScale = 0.0f;
-                pauseMenu.gameObject.SetActive(true);
-                paused = true;
+                PauseGame();
             }
         }
     }
-    public void PauseToMenu()
+
+    public void PauseGame()
     {
-        Time.timeScale = 1.0f;
+        pauseMenu.SetActive(true);
+        Time.timeScale = 0f;
+        isPaused = true;
+    }
+
+    public void ResumeGame()
+    {
+        pauseMenu.SetActive(false);
+        optionsMenu.SetActive(false);
+        Time.timeScale = 1f;
+        isPaused = false;
     }
 }

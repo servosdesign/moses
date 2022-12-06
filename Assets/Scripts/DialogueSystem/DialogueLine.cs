@@ -31,16 +31,19 @@ namespace DialogueSystem
 
         private void Update()
         {
-            if (Input.GetMouseButtonDown(0))
+            if (!PauseManager.isPaused)
             {
-                if (textHolder.text != input)
+                if (Input.GetMouseButtonDown(0))
                 {
-                    StopCoroutine(lineAppear);
-                    textHolder.text = input;
-                }
-                else
-                {
-                    finished = true;
+                    if (textHolder.text != input)
+                    {
+                        StopCoroutine(lineAppear);
+                        textHolder.text = input;
+                    }
+                    else
+                    {
+                        finished = true;
+                    }
                 }
             }
         }
