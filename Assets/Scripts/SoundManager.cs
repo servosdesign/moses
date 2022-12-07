@@ -86,4 +86,17 @@ public class SoundManager : MonoBehaviour
     //PlayEnemyHitSound
 
     //PlayEnemeyKilledSound
+
+    //PlayPlayerHitSound
+
+    //PlayPlayerKilledSound
+
+    /* TODO: 
+        Respawn Player when dies
+        Make health 100 
+        Increase range of skeletons
+        Remove Health UI from pause menu
+        Add main menu cutscene
+        Add final npc dialogue which leads to main menu
+    */
 }

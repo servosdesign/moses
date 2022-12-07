@@ -7,6 +7,7 @@ public class SceneTransition : MonoBehaviour
     public Animator animator;
 
     private string sceneToLoad;
+    public static bool isTransitioning;
 
     public void OnClick(Button button)
     {
@@ -32,6 +33,17 @@ public class SceneTransition : MonoBehaviour
     {
         sceneToLoad = sceneName;
         animator.SetTrigger("fadeOut");
+        isTransitioning = true;
+    }
+
+    public void FadeIntoScene()
+    {
+        isTransitioning = true;
+    }
+
+    public void FadeIntoSceneComplete()
+    {
+        isTransitioning = false;
     }
 
     public void OnFadeComplete()
@@ -43,6 +55,7 @@ public class SceneTransition : MonoBehaviour
 #endif
             Application.Quit();
         }
+        isTransitioning = false;
         SceneManager.LoadScene(sceneToLoad);
     }
 }

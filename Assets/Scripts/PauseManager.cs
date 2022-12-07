@@ -23,19 +23,22 @@ public class PauseManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (!SceneTransition.isTransitioning)
         {
-            if (isPaused)
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
-                ResumeGame();
-                resumeButton.GetComponent<Image>().color = originalColor;
-                optionsButton.GetComponent<Image>().color = originalColor;
-                quitButton.GetComponent<Image>().color = originalColor;
-                backButton.GetComponent<Image>().color = originalColor;
-            }
-            else
-            {
-                PauseGame();
+                if (isPaused)
+                {
+                    ResumeGame();
+                    resumeButton.GetComponent<Image>().color = originalColor;
+                    optionsButton.GetComponent<Image>().color = originalColor;
+                    quitButton.GetComponent<Image>().color = originalColor;
+                    backButton.GetComponent<Image>().color = originalColor;
+                }
+                else
+                {
+                    PauseGame();
+                }
             }
         }
     }
