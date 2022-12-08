@@ -296,6 +296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 763319258}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -500,6 +501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 1789302785}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -800,6 +802,7 @@ GameObject:
   - component: {fileID: 154613481}
   - component: {fileID: 154613482}
   - component: {fileID: 154613483}
+  - component: {fileID: 154613484}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Enemy
@@ -955,6 +958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 286236561}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -988,6 +992,21 @@ MonoBehaviour:
   currentHealth: 10
   maxHealth: 10
   flashLength: 0.5
+--- !u!114 &154613484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154613475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &170041099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,6 +1073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 500612041}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -1386,6 +1406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 1720792415}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -1857,6 +1878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 669672273}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -2258,6 +2280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 110095672}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -2586,6 +2609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 532858618}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -3104,6 +3128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 1478196575}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -4103,6 +4128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 463191807}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -4338,6 +4364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 606670206}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -4618,6 +4645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 1036760152}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -4822,6 +4850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 1207371907}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -5354,6 +5383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 875643204}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -5558,6 +5588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 150027725}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -5762,6 +5793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 1208693382}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -6891,6 +6923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 458558225}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -8055,6 +8088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 422382583}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -8478,6 +8512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 297030445}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -45517,6 +45552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 1484095696}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -92719,6 +92755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 481457823}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -93136,6 +93173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 1931984988}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -93371,6 +93409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 11406581}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -94086,6 +94125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 467879143}
+  enemyHit: {fileID: 0}
   speed: 2
   maxRange: 5
   minRange: 0.8

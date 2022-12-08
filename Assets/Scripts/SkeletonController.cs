@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class SkeletonController : MonoBehaviour
 {
+    private SoundManager soundManager;
     private Animator myAnimation;
     private Transform target;
     public Transform homePosition;
+    public AudioClip enemyHit;
 
     [SerializeField]
     private float speed = 0f;
@@ -20,6 +22,7 @@ public class SkeletonController : MonoBehaviour
         homePosition.parent = null;
         myAnimation = GetComponent<Animator>();
         target = FindObjectOfType<PlayerController>().transform;
+        soundManager = GetComponent<SoundManager>();
     }
 
     void Update()
@@ -62,6 +65,8 @@ public class SkeletonController : MonoBehaviour
         {
             Vector2 difference = transform.position - other.transform.position;
             transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y);
+
+            soundManager.PlayEnemyHitSound(enemyHit);
         }
     }
 }

@@ -83,13 +83,25 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    //PlayEnemyHitSound
+    public void PlayEnemyHitSound(AudioClip enemyHit)
+    {
+        if (!PauseManager.isPaused)
+        {
+            animationSource.PlayOneShot(enemyHit, 0.3f);
+        }
+    }
 
-    //PlayEnemeyKilledSound
+    public void PlayEnemyKilledSound(AudioClip enemyKilled)
+    {
+        if (!PauseManager.isPaused)
+        {
+            animationSource.PlayOneShot(enemyKilled, 1f);
+        }
+    }
 
     //PlayPlayerHitSound
 
-    //PlayPlayerKilledSound
+    //PlayPlayerKilledSound (need new script since player will become null)
 
     /* TODO: 
         Respawn Player when dies
