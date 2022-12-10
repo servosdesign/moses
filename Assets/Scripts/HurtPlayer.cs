@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class HurtPlayer : MonoBehaviour
 {
-    private HealthManager healthManage;
+    private HealthManager healthManager;
+    private SoundManager soundManager;
+    public AudioClip playerHitSound;
 
     public float waitToHurt = 0.7f;
     public bool isTouching;
@@ -14,30 +16,20 @@ public class HurtPlayer : MonoBehaviour
 
     void Start()
     {
-        healthManage = FindObjectOfType<HealthManager>();
+        healthManager = FindObjectOfType<HealthManager>();
+        soundManager = GetComponent<SoundManager>();
     }
 
     void Update()
     {
-        /*
-        if (reloading)
-        {
-          waitToLoad -= Time.deltaTime;
-          if (waitToLoad <= 0)
-          {
-            SceneManager.LoadScene("MainMenu");
-          }
-        }
-        */
-
         if (isTouching)
         {
             waitToHurt -= Time.deltaTime;
             if (waitToHurt <= 0)
             {
-                healthManage.HurtPlayer(damageToGive);
+                healthManager.HurtPlayer(damageToGive);
                 waitToHurt = 0.7f;
-
+                soundManager.PlayPlayerHitSound(playerHitSound);
             }
         }
     }
@@ -47,8 +39,7 @@ public class HurtPlayer : MonoBehaviour
         if (other.collider.tag == "Player")
         {
             other.gameObject.GetComponent<HealthManager>().HurtPlayer(damageToGive);
-
-            // reloading = true;
+            soundManager.PlayPlayerHitSound(playerHitSound);
         }
     }
 

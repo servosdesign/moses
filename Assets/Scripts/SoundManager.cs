@@ -79,7 +79,7 @@ public class SoundManager : MonoBehaviour
     {
         if (!PauseManager.isPaused)
         {
-            animationSource.PlayOneShot(sparedSound, 0.1f);
+            animationSource.PlayOneShot(sparedSound, 0.4f);
         }
     }
 
@@ -99,9 +99,30 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    //PlayPlayerHitSound
+    public void PlayPlayerHitSound(AudioClip playerHit)
+    {
+        if (!PauseManager.isPaused)
+        {
+            animationSource.PlayOneShot(playerHit, 0.5f);
+        }
 
-    //PlayPlayerKilledSound (need new script since player will become null)
+    }
+
+    public void PlayPlayerKilledSound(AudioClip playerKilled)
+    {
+        if (!PauseManager.isPaused)
+        {
+            animationSource.PlayOneShot(playerKilled, 0.2f);
+        }
+    }
+
+    public void PlayRespawnSound(AudioClip respawn)
+    {
+        if (!PauseManager.isPaused)
+        {
+            animationSource.PlayOneShot(respawn, 0.5f);
+        }
+    }
 
     /* TODO: 
         Respawn Player when dies

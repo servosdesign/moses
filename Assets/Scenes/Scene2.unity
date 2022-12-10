@@ -246,6 +246,7 @@ GameObject:
   - component: {fileID: 90153028}
   - component: {fileID: 90153027}
   - component: {fileID: 90153026}
+  - component: {fileID: 90153034}
   m_Layer: 0
   m_Name: Skeleton (21)
   m_TagString: Enemy
@@ -280,6 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -296,7 +298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 763319258}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -435,6 +437,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &90153034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90153025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &91383349
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +468,7 @@ GameObject:
   - component: {fileID: 91383352}
   - component: {fileID: 91383351}
   - component: {fileID: 91383350}
+  - component: {fileID: 91383358}
   m_Layer: 0
   m_Name: Skeleton (2)
   m_TagString: Enemy
@@ -485,6 +503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -501,7 +520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 1789302785}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -640,6 +659,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &91383358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91383349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &110095671
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,6 +1008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -1023,6 +1058,7 @@ GameObject:
   - component: {fileID: 170041102}
   - component: {fileID: 170041101}
   - component: {fileID: 170041100}
+  - component: {fileID: 170041108}
   m_Layer: 0
   m_Name: Skeleton (23)
   m_TagString: Enemy
@@ -1057,6 +1093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -1073,7 +1110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 500612041}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -1212,6 +1249,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &170041108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170041099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &170680074
 GameObject:
   m_ObjectHideFlags: 0
@@ -1356,6 +1408,7 @@ GameObject:
   - component: {fileID: 171934596}
   - component: {fileID: 171934595}
   - component: {fileID: 171934594}
+  - component: {fileID: 171934602}
   m_Layer: 0
   m_Name: Skeleton (4)
   m_TagString: Enemy
@@ -1390,6 +1443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -1406,7 +1460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 1720792415}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -1545,6 +1599,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &171934602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171934593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &179567747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1828,6 +1897,7 @@ GameObject:
   - component: {fileID: 341112644}
   - component: {fileID: 341112643}
   - component: {fileID: 341112642}
+  - component: {fileID: 341112650}
   m_Layer: 0
   m_Name: Skeleton (18)
   m_TagString: Enemy
@@ -1862,6 +1932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -1878,7 +1949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 669672273}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -2017,6 +2088,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &341112650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341112641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &365744297
 GameObject:
   m_ObjectHideFlags: 0
@@ -2230,6 +2316,7 @@ GameObject:
   - component: {fileID: 394357339}
   - component: {fileID: 394357338}
   - component: {fileID: 394357337}
+  - component: {fileID: 394357345}
   m_Layer: 0
   m_Name: Skeleton (14)
   m_TagString: Enemy
@@ -2264,6 +2351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -2280,7 +2368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 110095672}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -2419,6 +2507,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &394357345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394357336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &422382582
 GameObject:
   m_ObjectHideFlags: 0
@@ -2559,6 +2662,7 @@ GameObject:
   - component: {fileID: 481339839}
   - component: {fileID: 481339838}
   - component: {fileID: 481339837}
+  - component: {fileID: 481339845}
   m_Layer: 0
   m_Name: Skeleton (8)
   m_TagString: Enemy
@@ -2593,6 +2697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -2609,7 +2714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 532858618}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -2748,6 +2853,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &481339845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481339836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &481457822
 GameObject:
   m_ObjectHideFlags: 0
@@ -3078,6 +3198,7 @@ GameObject:
   - component: {fileID: 553966111}
   - component: {fileID: 553966110}
   - component: {fileID: 553966109}
+  - component: {fileID: 553966117}
   m_Layer: 0
   m_Name: Skeleton (9)
   m_TagString: Enemy
@@ -3112,6 +3233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -3128,7 +3250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 1478196575}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -3267,6 +3389,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &553966117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553966108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &553991078
 GameObject:
   m_ObjectHideFlags: 0
@@ -4078,6 +4215,7 @@ GameObject:
   - component: {fileID: 745197122}
   - component: {fileID: 745197121}
   - component: {fileID: 745197120}
+  - component: {fileID: 745197128}
   m_Layer: 0
   m_Name: Skeleton (22)
   m_TagString: Enemy
@@ -4112,6 +4250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -4128,7 +4267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 463191807}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -4267,6 +4406,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &745197128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745197119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &763319257
 GameObject:
   m_ObjectHideFlags: 0
@@ -4314,6 +4468,7 @@ GameObject:
   - component: {fileID: 768992051}
   - component: {fileID: 768992050}
   - component: {fileID: 768992049}
+  - component: {fileID: 768992057}
   m_Layer: 0
   m_Name: Skeleton (6)
   m_TagString: Enemy
@@ -4348,6 +4503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -4364,7 +4520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 606670206}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -4503,6 +4659,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &768992057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768992048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &842000045
 GameObject:
   m_ObjectHideFlags: 0
@@ -4595,6 +4766,7 @@ GameObject:
   - component: {fileID: 851583514}
   - component: {fileID: 851583513}
   - component: {fileID: 851583512}
+  - component: {fileID: 851583520}
   m_Layer: 0
   m_Name: Skeleton (11)
   m_TagString: Enemy
@@ -4629,6 +4801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -4645,7 +4818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 1036760152}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -4784,6 +4957,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &851583520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851583511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &871405003
 GameObject:
   m_ObjectHideFlags: 0
@@ -4800,6 +4988,7 @@ GameObject:
   - component: {fileID: 871405006}
   - component: {fileID: 871405005}
   - component: {fileID: 871405004}
+  - component: {fileID: 871405012}
   m_Layer: 0
   m_Name: Skeleton (16)
   m_TagString: Enemy
@@ -4834,6 +5023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -4850,7 +5040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 1207371907}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -4989,6 +5179,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &871405012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871405003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &875643203
 GameObject:
   m_ObjectHideFlags: 0
@@ -5333,6 +5538,7 @@ GameObject:
   - component: {fileID: 905242482}
   - component: {fileID: 905242481}
   - component: {fileID: 905242480}
+  - component: {fileID: 905242488}
   m_Layer: 0
   m_Name: Skeleton (7)
   m_TagString: Enemy
@@ -5367,6 +5573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -5383,7 +5590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 875643204}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -5522,6 +5729,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &905242488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905242479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &921979144
 GameObject:
   m_ObjectHideFlags: 0
@@ -5538,6 +5760,7 @@ GameObject:
   - component: {fileID: 921979147}
   - component: {fileID: 921979146}
   - component: {fileID: 921979145}
+  - component: {fileID: 921979153}
   m_Layer: 0
   m_Name: Skeleton (5)
   m_TagString: Enemy
@@ -5572,6 +5795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -5588,7 +5812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 150027725}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -5727,6 +5951,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &921979153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921979144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &935825383
 GameObject:
   m_ObjectHideFlags: 0
@@ -5743,6 +5982,7 @@ GameObject:
   - component: {fileID: 935825386}
   - component: {fileID: 935825385}
   - component: {fileID: 935825384}
+  - component: {fileID: 935825392}
   m_Layer: 0
   m_Name: Skeleton (15)
   m_TagString: Enemy
@@ -5777,6 +6017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -5793,7 +6034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 1208693382}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -5932,6 +6173,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &935825392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935825383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &985623142
 GameObject:
   m_ObjectHideFlags: 0
@@ -6873,6 +7129,7 @@ GameObject:
   - component: {fileID: 1143015812}
   - component: {fileID: 1143015811}
   - component: {fileID: 1143015810}
+  - component: {fileID: 1143015818}
   m_Layer: 0
   m_Name: Skeleton (19)
   m_TagString: Enemy
@@ -6907,6 +7164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -6923,7 +7181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 458558225}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -7062,6 +7320,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1143015818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143015809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &1154443770
 GameObject:
   m_ObjectHideFlags: 0
@@ -8038,6 +8311,7 @@ GameObject:
   - component: {fileID: 1413823552}
   - component: {fileID: 1413823551}
   - component: {fileID: 1413823550}
+  - component: {fileID: 1413823558}
   m_Layer: 0
   m_Name: Skeleton (1)
   m_TagString: Enemy
@@ -8072,6 +8346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -8088,7 +8363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 422382583}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -8227,6 +8502,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1413823558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413823549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &1415187275
 GameObject:
   m_ObjectHideFlags: 0
@@ -8319,6 +8609,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1415187277}
         m_TargetAssemblyTypeName: ButtonHover, Assembly-CSharp
         m_MethodName: ChangeOffHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1137404720}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: SaveSoundSettings
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8462,6 +8764,7 @@ GameObject:
   - component: {fileID: 1461615490}
   - component: {fileID: 1461615489}
   - component: {fileID: 1461615488}
+  - component: {fileID: 1461615496}
   m_Layer: 0
   m_Name: Skeleton (20)
   m_TagString: Enemy
@@ -8496,6 +8799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -8512,7 +8816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 297030445}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -8651,6 +8955,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1461615496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461615487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &1463972528
 GameObject:
   m_ObjectHideFlags: 0
@@ -45502,6 +45821,7 @@ GameObject:
   - component: {fileID: 1643031581}
   - component: {fileID: 1643031580}
   - component: {fileID: 1643031579}
+  - component: {fileID: 1643031587}
   m_Layer: 0
   m_Name: Skeleton (17)
   m_TagString: Enemy
@@ -45536,6 +45856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -45552,7 +45873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 1484095696}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -45691,6 +46012,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1643031587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643031578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &1661048343
 GameObject:
   m_ObjectHideFlags: 0
@@ -45893,6 +46229,68 @@ PrefabInstance:
       objectReference: {fileID: 1078665857}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd0b527815a82a449a331d1970957279, type: 3}
+--- !u!1 &1718057482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1718057485}
+  - component: {fileID: 1718057484}
+  - component: {fileID: 1718057483}
+  m_Layer: 0
+  m_Name: DeathManger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1718057483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718057482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26ce65ac7c9283c45ae79941ffb04e54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerKilledSound: {fileID: 8300000, guid: 12f067907584f1e42b7182280e071888, type: 3}
+  player: {fileID: 365744297}
+--- !u!114 &1718057484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718057482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
+--- !u!4 &1718057485
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718057482}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 64.82069, y: 38.52027, z: 3.5740392}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1720792414
 GameObject:
   m_ObjectHideFlags: 0
@@ -92705,6 +93103,7 @@ GameObject:
   - component: {fileID: 1821056602}
   - component: {fileID: 1821056601}
   - component: {fileID: 1821056600}
+  - component: {fileID: 1821056608}
   m_Layer: 0
   m_Name: Skeleton (12)
   m_TagString: Enemy
@@ -92739,6 +93138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -92755,7 +93155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 481457823}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -92894,6 +93294,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1821056608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821056599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &1840219873
 GameObject:
   m_ObjectHideFlags: 0
@@ -93123,6 +93538,7 @@ GameObject:
   - component: {fileID: 1916374160}
   - component: {fileID: 1916374159}
   - component: {fileID: 1916374158}
+  - component: {fileID: 1916374166}
   m_Layer: 0
   m_Name: Skeleton (3)
   m_TagString: Enemy
@@ -93157,6 +93573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -93173,7 +93590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 1931984988}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -93312,6 +93729,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1916374166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916374157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &1931984987
 GameObject:
   m_ObjectHideFlags: 0
@@ -93359,6 +93791,7 @@ GameObject:
   - component: {fileID: 1948910021}
   - component: {fileID: 1948910020}
   - component: {fileID: 1948910019}
+  - component: {fileID: 1948910027}
   m_Layer: 0
   m_Name: Skeleton (13)
   m_TagString: Enemy
@@ -93393,6 +93826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -93409,7 +93843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 11406581}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -93548,6 +93982,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1948910027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948910018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &1959045529
 GameObject:
   m_ObjectHideFlags: 0
@@ -94075,6 +94524,7 @@ GameObject:
   - component: {fileID: 2070560467}
   - component: {fileID: 2070560466}
   - component: {fileID: 2070560465}
+  - component: {fileID: 2070560473}
   m_Layer: 0
   m_Name: Skeleton (10)
   m_TagString: Enemy
@@ -94109,6 +94559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1efcc40c035cda4a9a7226230f4f784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   waitToHurt: 0.7
   isTouching: 0
   damageToGive: 10
@@ -94125,7 +94576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePosition: {fileID: 467879143}
-  enemyHit: {fileID: 0}
+  enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
   maxRange: 5
   minRange: 0.8
@@ -94264,6 +94715,21 @@ Transform:
   m_Father: {fileID: 1085766416}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2070560473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070560464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f76a80e7e713a4cae711e96d4d39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 0}
+  musicVolumeAudio: {fileID: 0}
+  animationSource: {fileID: 1137404717}
 --- !u!1 &2101918390
 GameObject:
   m_ObjectHideFlags: 0

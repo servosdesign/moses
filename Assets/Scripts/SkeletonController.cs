@@ -27,11 +27,18 @@ public class SkeletonController : MonoBehaviour
 
     void Update()
     {
-        if (Vector3.Distance(target.position, transform.position) <= maxRange && Vector3.Distance(target.position, transform.position) >= minRange)
+        if (!DeathManager.playerKilled)
         {
-            FollowPlayer();
+            if (Vector3.Distance(target.position, transform.position) <= maxRange && Vector3.Distance(target.position, transform.position) >= minRange)
+            {
+                FollowPlayer();
+            }
+            else if (Vector3.Distance(target.position, transform.position) >= maxRange)
+            {
+                ReturnPosition();
+            }
         }
-        else if (Vector3.Distance(target.position, transform.position) >= maxRange)
+        if (DeathManager.playerKilled)
         {
             ReturnPosition();
         }

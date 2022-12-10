@@ -20,6 +20,11 @@ public class HealthManager : MonoBehaviour
 
     void Update()
     {
+        if (DeathManager.playerRespawn)
+        {
+            currentHealth = maxHealth;
+        }
+
         if (flashActive)
         {
             if (flashCounter > flashLength * 0.99f)

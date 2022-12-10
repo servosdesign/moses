@@ -53,6 +53,7 @@ namespace DialogueSystem
             textHolder = GetComponent<Text>();
             textHolder.text = "";
             finished = false;
+
         }
     }
 }
