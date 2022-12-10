@@ -128,8 +128,12 @@ public class SoundManager : MonoBehaviour
         Respawn Player when dies
         Make health 100 
         Increase range of skeletons
+        Blocking push back
         Remove Health UI from pause menu
         Add main menu cutscene
         Add final npc dialogue which leads to main menu
+        If in cutscene pause remove that load button
+        Make knockback random and make player have to move to hit
+        Make the respawn position set
     */
 }
