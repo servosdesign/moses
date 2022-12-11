@@ -23,6 +23,7 @@ public class HealthManager : MonoBehaviour
         if (DeathManager.playerRespawn)
         {
             currentHealth = maxHealth;
+            DeathManager.playerRespawn = false;
         }
 
         if (flashActive)

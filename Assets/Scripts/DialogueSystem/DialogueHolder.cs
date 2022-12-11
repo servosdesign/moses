@@ -20,7 +20,7 @@ namespace DialogueSystem
                 {
                     killedCutsceneAnimation.Play("cutscene-fadein");
                 }
-                if (sparedCutsceneAnimation)
+                else if (sparedCutsceneAnimation)
                 {
                     sparedCutsceneAnimation.Play("cutscene-fadein2");
                 }

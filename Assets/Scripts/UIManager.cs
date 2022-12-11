@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
     private HealthManager healthManager;
     public Slider healthBar;
     public TextMeshProUGUI hpText;
+    public GameObject healthUI;
 
     void Start()
     {
@@ -20,5 +21,14 @@ public class UIManager : MonoBehaviour
         healthBar.maxValue = healthManager.maxHealth;
         healthBar.value = healthManager.currentHealth;
         hpText.text = "HP: " + healthManager.currentHealth + "/" + healthManager.maxHealth;
+
+        if (PauseManager.isPaused)
+        {
+            healthUI.SetActive(false);
+        }
+        else
+        {
+            healthUI.SetActive(true);
+        }
     }
 }

@@ -7,7 +7,8 @@ public class DeathManager : MonoBehaviour
     private SoundManager soundManager;
     public AudioClip playerKilledSound;
     public GameObject player;
-    private Vector2 spawnPoint;
+    public GameObject spawnCords;
+    public Vector2 spawnPoint;
 
     public static bool playerKilled;
     public static bool playerRespawn;
@@ -17,8 +18,7 @@ public class DeathManager : MonoBehaviour
     {
         soundManager = GetComponent<SoundManager>();
         playerKilled = false;
-        playerRespawn = false;
-        spawnPoint = player.transform.position;
+        spawnPoint = spawnCords.transform.position;
     }
 
     void Update()
@@ -30,7 +30,6 @@ public class DeathManager : MonoBehaviour
                 soundManager.PlayPlayerKilledSound(playerKilledSound);
                 runOnce = true;
             }
-            playerRespawn = false;
         }
         else if (player.activeInHierarchy == false)
         {
@@ -38,17 +37,12 @@ public class DeathManager : MonoBehaviour
         }
         if (playerKilled)
         {
-            resetHealth();
             StartCoroutine(RespawnPlayer());
             playerKilled = false;
+            playerRespawn = true;
         }
-    }
 
-    public void resetHealth()
-    {
-        playerRespawn = true;
     }
-
 
     IEnumerator RespawnPlayer()
     {
