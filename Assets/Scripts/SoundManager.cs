@@ -130,6 +130,5 @@ public class SoundManager : MonoBehaviour
         Add main menu cutscene
         Add final npc dialogue which leads to main menu
         Make knockback random and make player have to move to hit
-        Make the respawn position set
     */
 }
