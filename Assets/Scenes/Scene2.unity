@@ -300,7 +300,7 @@ MonoBehaviour:
   homePosition: {fileID: 763319258}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &90153029
 Animator:
@@ -522,7 +522,7 @@ MonoBehaviour:
   homePosition: {fileID: 1789302785}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &91383353
 Animator:
@@ -994,7 +994,7 @@ MonoBehaviour:
   homePosition: {fileID: 286236561}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!114 &154613482
 MonoBehaviour:
@@ -1112,7 +1112,7 @@ MonoBehaviour:
   homePosition: {fileID: 500612041}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &170041103
 Animator:
@@ -1462,7 +1462,7 @@ MonoBehaviour:
   homePosition: {fileID: 1720792415}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &171934597
 Animator:
@@ -1951,7 +1951,7 @@ MonoBehaviour:
   homePosition: {fileID: 669672273}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &341112645
 Animator:
@@ -2370,7 +2370,7 @@ MonoBehaviour:
   homePosition: {fileID: 110095672}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &394357340
 Animator:
@@ -2716,7 +2716,7 @@ MonoBehaviour:
   homePosition: {fileID: 532858618}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &481339840
 Animator:
@@ -3252,7 +3252,7 @@ MonoBehaviour:
   homePosition: {fileID: 1478196575}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &553966112
 Animator:
@@ -4302,7 +4302,7 @@ MonoBehaviour:
   homePosition: {fileID: 463191807}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &745197123
 Animator:
@@ -4555,7 +4555,7 @@ MonoBehaviour:
   homePosition: {fileID: 606670206}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &768992052
 Animator:
@@ -4853,7 +4853,7 @@ MonoBehaviour:
   homePosition: {fileID: 1036760152}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &851583515
 Animator:
@@ -5075,7 +5075,7 @@ MonoBehaviour:
   homePosition: {fileID: 1207371907}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &871405007
 Animator:
@@ -5625,7 +5625,7 @@ MonoBehaviour:
   homePosition: {fileID: 875643204}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &905242483
 Animator:
@@ -5847,7 +5847,7 @@ MonoBehaviour:
   homePosition: {fileID: 150027725}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &921979148
 Animator:
@@ -6069,7 +6069,7 @@ MonoBehaviour:
   homePosition: {fileID: 1208693382}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &935825387
 Animator:
@@ -7216,7 +7216,7 @@ MonoBehaviour:
   homePosition: {fileID: 458558225}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &1143015813
 Animator:
@@ -8433,7 +8433,7 @@ MonoBehaviour:
   homePosition: {fileID: 422382583}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &1413823553
 Animator:
@@ -8886,7 +8886,7 @@ MonoBehaviour:
   homePosition: {fileID: 297030445}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &1461615491
 Animator:
@@ -45943,7 +45943,7 @@ MonoBehaviour:
   homePosition: {fileID: 1484095696}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &1643031582
 Animator:
@@ -93227,7 +93227,7 @@ MonoBehaviour:
   homePosition: {fileID: 481457823}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &1821056603
 Animator:
@@ -93662,7 +93662,7 @@ MonoBehaviour:
   homePosition: {fileID: 1931984988}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &1916374161
 Animator:
@@ -93915,7 +93915,7 @@ MonoBehaviour:
   homePosition: {fileID: 11406581}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &1948910022
 Animator:
@@ -94648,7 +94648,7 @@ MonoBehaviour:
   homePosition: {fileID: 467879143}
   enemyHit: {fileID: 8300000, guid: 61455af8fa9d8e44b942e1fc00cd4d3f, type: 3}
   speed: 2
-  maxRange: 5
+  maxRange: 10
   minRange: 0.8
 --- !u!95 &2070560468
 Animator:

@@ -125,10 +125,9 @@ public class SoundManager : MonoBehaviour
     }
 
     /* TODO: 
-        Increase range of skeletons
-        Blocking attack push back
+        Blocking attack with push back
         Add main menu cutscene
         Add final npc dialogue which leads to main menu
-        Make knockback random and make player have to move to hit
+        Make knockback random to make player have to move to hit
     */
 }
