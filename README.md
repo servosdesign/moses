@@ -1,1 +1,1 @@
-#### Unity2D RPG game with top down, pixelized, minimalistic, choices matter features. The player is guided through the game’s various scenes and is left with their own options in the varying situations
+#### Unity2D RPG game with top down, pixelized, minimalistic, and choices matter features. The player is guided through the game’s various scenes and is left with their own options in the varying situations
